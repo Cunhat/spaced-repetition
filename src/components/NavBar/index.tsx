@@ -23,7 +23,10 @@ export function NavBar() {
                 <NavBarItem title={"My fash cards"} path={"/MyCards"} />
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <NavBarItem title={"Create new flash card"} path={"/"} />
+                <NavBarItem
+                  title={"Create new flash card"}
+                  path={"/createCard"}
+                />
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu.Root>

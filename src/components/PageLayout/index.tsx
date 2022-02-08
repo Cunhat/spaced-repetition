@@ -1,5 +1,5 @@
 import React from "react";
-import { PageContainer } from "./styles";
+import { PageContainer, PageChildrenContainer } from "./styles";
 import { NavBar } from "../NavBar";
 
 interface PageLayoutProps {
@@ -10,7 +10,7 @@ export function PageLayout(props: PageLayoutProps) {
   return (
     <PageContainer>
       <NavBar></NavBar>
-      {props.children}
+      <PageChildrenContainer>{props.children}</PageChildrenContainer>
     </PageContainer>
   );
 }
