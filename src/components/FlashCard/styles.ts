@@ -40,6 +40,10 @@ export const FlashCardContainer = styled.div<FlashCardContainerProps>`
   position: relative;
   transform-style: preserve-3d;
   margin: 35px;
+
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const FlashCardQuestionTitle = styled.h1`
@@ -48,6 +52,30 @@ export const FlashCardQuestionTitle = styled.h1`
 export const FlashCardAnswerText = styled.span`
   color: #fff;
   font-size: 20px;
+  height: 100%;
+  overflow: auto;
+  padding: 10px;
+  text-align: center;
+
+  ::-webkit-scrollbar {
+    width: 20px;
+    padding: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
 `;
 
 export const FlashCardItemFront = styled.div`
@@ -56,10 +84,15 @@ export const FlashCardItemFront = styled.div`
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 25px;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #080d13;
+  background-image: url(workflows.webp);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 38px;
 `;
 
 export const FlashCardItemBack = styled.div`
@@ -69,8 +102,13 @@ export const FlashCardItemBack = styled.div`
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 25px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #080d13;
+  background-image: url(workflows.webp);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 38px;
 `;
