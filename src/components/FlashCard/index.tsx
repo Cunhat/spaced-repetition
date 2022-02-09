@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   FlashCardContainer,
-  FlashCardInner,
   FlashCardItemFront,
   FlashCardItemBack,
 } from "./styles";

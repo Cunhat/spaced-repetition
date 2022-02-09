@@ -39,10 +39,15 @@ export const FlashCardContainer = styled.div<FlashCardContainerProps>`
         `};
   position: relative;
   transform-style: preserve-3d;
+  margin: 35px;
 `;
 
 export const FlashCardQuestionTitle = styled.h1`
   color: #fff;
+`;
+export const FlashCardAnswerText = styled.span`
+  color: #fff;
+  font-size: 20px;
 `;
 
 export const FlashCardItemFront = styled.div`
@@ -52,6 +57,9 @@ export const FlashCardItemFront = styled.div`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const FlashCardItemBack = styled.div`
@@ -60,6 +68,9 @@ export const FlashCardItemBack = styled.div`
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;\
+  backface-visibility: hidden;
   padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
